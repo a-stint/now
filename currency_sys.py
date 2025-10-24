@@ -4,8 +4,8 @@ import sqlite3
 class CurrencySystem:
     def __init__(self, db_manager):
         self.db_manager = db_manager
-        self.TASK_COMPLETION_REWARD = 3
-        self.DEADLINE_MISS_PENALTY = 5
+        self.TASK_COMPLETION_REWARD = 1
+        self.DEADLINE_MISS_PENALTY = 3
         self.TYPING_RECORD_BONUS = 2
     
     def get_balance(self):

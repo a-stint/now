@@ -18,7 +18,7 @@ class NotificationManager:
         """Send notification for missed deadline"""
         notification.notify(
             title="❌ Deadline Missed!",
-            message=f"'{task_name}' deadline has passed. -$5 penalty applied.",
+            message=f"'{task_name}' deadline has passed. -$3 penalty applied.",
             app_name=self.app_name,
             timeout=10
         )
@@ -27,7 +27,7 @@ class NotificationManager:
         """Send notification for completed task"""
         notification.notify(
             title="✅ Task Completed!",
-            message=f"'{task_name}' completed successfully! +$3 earned!",
+            message=f"'{task_name}' completed successfully! +$1 earned!",
             app_name=self.app_name,
             timeout=5
         )

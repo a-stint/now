@@ -86,7 +86,7 @@ class MainWindow(QMainWindow):
         typing_layout = QHBoxLayout()
         
         # Typemonkey button
-        typemonkey_button = QPushButton("Open Typemonkey")
+        typemonkey_button = QPushButton("Open Monkeytype")
         typemonkey_button.clicked.connect(self.open_typemonkey)
         typing_layout.addWidget(typemonkey_button)
         
@@ -146,7 +146,7 @@ class MainWindow(QMainWindow):
             task_layout.addWidget(info_label)
             
             # Deadline info
-            deadline_label = QLabel(f"Artificial Deadline: {artificial_deadline}")
+            deadline_label = QLabel(f"Deadline: {artificial_deadline}")
             task_layout.addWidget(deadline_label)
             
             # Complete button for pending tasks
@@ -165,11 +165,11 @@ class MainWindow(QMainWindow):
         """Mark task as completed"""
         self.task_manager.complete_task(task_id)
         self.refresh_display()
-        QMessageBox.information(self, "Success", "Task completed! +$3 earned!")
+        QMessageBox.information(self, "Success", "Task completed! +$1 earned!")
     
     def open_typemonkey(self):
         """Open Typemonkey website"""
-        webbrowser.open("https://typemonkey.com")
+        webbrowser.open("https://monkeytype.com")
     
     def enter_typing_speed(self):
         """Enter typing speed after Typemonkey test"""
