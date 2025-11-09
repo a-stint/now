@@ -1,12 +1,7 @@
-## Now
+# Tauri + React + Typescript
 
-> "Don't get it perfect, get it going"  
+This template should help get you started developing with Tauri, React and Typescript in Vite.
 
-`Now` is a productivity-focused desktop application designed to help users **get things done** fast.
+## Recommended IDE Setup
 
-It combats procastination through:
-1. creating a false sense of urgency
-2. an incentive reward system
-3. a side quest that reinforces the habit of moving quickly (using Monkeytype)
- 
-Currently in its bare bones buggy stage.
+- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
